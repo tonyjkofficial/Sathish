@@ -11,8 +11,6 @@ public class StepDef {
 
         pageClass = new PageClass();
         pageClass.browserLaunch();
-
-
     }
 
     @When("User Enters {string}")
@@ -23,11 +21,18 @@ public class StepDef {
 
     @When("User Enters pass {string}")
     public void userEntersPass(String password) {
+
         pageClass.enterPassword(password);
     }
 
     @When("User Clicks {string}")
     public void userClicks(String menu) {
+
         pageClass.menu(menu);
+    }
+    @When("User Selects {string}")
+    public void userSelects(String option) {
+
+        pageClass.option(option);
     }
 }

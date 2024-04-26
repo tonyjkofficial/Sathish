@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
         tags = "@abc",
         plugin = {"pretty", "html:target/cucumber_report/cucumberReport.html"}, monochrome = true)
 
-public class Runner  extends AbstractTestNGCucumberTests {
+public class Runner extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider(parallel = false)
