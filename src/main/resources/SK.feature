@@ -3,7 +3,7 @@ Feature:  Ad Hotel
   Background:
     When User launch URL
 
-  @abc
+  @login @abc
   Scenario Outline: Hotel
     When User Enters "<username>"
     When User Enters pass "<password>"
