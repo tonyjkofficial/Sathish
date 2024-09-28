@@ -1,17 +1,19 @@
 package xyz.stepdef;
 
 import io.cucumber.java.en.When;
+import xyz.runner.KvsPage;
 import xyz.runner.PageClass;
 
 public class StepDef {
     PageClass pageClass;
+    KvsPage kvsPage;
 
-    @When("User launch URL")
+   /* @When("User launch URL")
     public void user_launch_url() {
 
         pageClass = new PageClass();
         pageClass.browserLaunch();
-    }
+    }*/
 
     @When("User Enters {string}")
     public void userEnters(String username) {
